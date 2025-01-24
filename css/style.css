@@ -130,29 +130,23 @@ body {
 *************************************/
 
 .about-container {
+    display: flex;
     justify-content: center;
 }   
 
-.about-banner {
-    text-align: center;
-    width: 100%;
+.banner {
     height: 215px;
     background-color: #13D0CA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.about-banner h1 {
-    font-size: 40px;
+.banner h1 {
     color: #F7F7F7;
     text-shadow: #00000040 0px 3px 4px;
-    /* margin-bottom: 7px; */
-    margin: 0px;
-}
-
-.banner-content {
-    /* margin-top: 84px; */
-    /* margin-bottom: 83px; */
-    position: relative;
-    top: 84px;
+    font-weight: bold;
 }
 
 .black-highlight {
@@ -168,7 +162,7 @@ body {
     gap: 10px;
 }
 
-.breadcrumb li {
+.breadcrumb li a{
     text-decoration: none;
     font-size: 14px;
     color: #FFFFFF;
@@ -186,20 +180,15 @@ body {
 }
 
 .text-content {
-    margin-left: 173px;
+    padding: 0px 180px;
+    max-width: 1400px;
 }
 
 .text-content h4 {
     margin-top: 80px;
-    width: 874px;
-    height: 52px;
     font-size: 20px;
     font-weight: 300;
-}
-
-.text-content .paragraph {
-    width: 999px;
-    height: 178px;
+    margin-bottom: 20px;
 }
 
 .text-content p {
@@ -207,20 +196,19 @@ body {
     font-size: 18px;
     font-weight: 300;
     line-height: 26px;
+    margin-bottom: 25px;
 }
 
 .text-content h3 {
     margin-top: 70px;
+    margin-bottom: 20px;
     font-size: 28px;
     font-weight: bold;
     color: #101820;
 }
 
 .pointers {
-    height: 302px;
-    margin-left: 28px;
-    margin-top: 40px;
-    margin-bottom: 99px;
+    padding: 11px 28px 80px;
 }
 
 .pointers ul {
