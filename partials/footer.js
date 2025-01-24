@@ -1,5 +1,6 @@
 class Footer extends HTMLElement { constructor() { super(); }
-connectedCallback() { this.innerHTML = `     <div class="footer">
+connectedCallback() { this.innerHTML = `   <div class="footer">
+      <div class="footer-content">
         <div class="footer-top">
           <div class="logo">
             <img src="/assets/img/spoticar-logo.png" alt="Spoticar Logo" />
@@ -15,7 +16,7 @@ connectedCallback() { this.innerHTML = `     <div class="footer">
           </div>
         </div>
 
-        <div class="footer-mid">
+        <div>
           <div class="text">
             <p>
               Dealer price excludes taxes, title, registration fees, and dealer
@@ -24,10 +25,10 @@ connectedCallback() { this.innerHTML = `     <div class="footer">
             </p>
           </div>
         </div>
-
-        <div class="footer-bottom">
-          <div class="divider"></div>
-          <span>© Spoticar - 2024 | All Right Reserved</span>
-        </div>
-      </div>`; } }
+      </div>
+      <div class="divider"></div>
+      <div class="footer-bottom">
+        <span>© Spoticar - 2024 | All Right Reserved</span>
+      </div>
+    </div>`; } }
 customElements.define("footer-component", Footer);
