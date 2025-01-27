@@ -46,7 +46,7 @@ connectedCallback() { this.innerHTML = `   <nav class="navbar navbar-expand-lg">
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#">Value My Vehicle</a>
+                <a class="nav-link" href="value-my-vehicle.html">Value My Vehicle</a>
               </li>
 
               <li class="nav-item">

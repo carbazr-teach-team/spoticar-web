@@ -231,3 +231,65 @@ body {
     /* Space between icon and text */
 }
 
+
+/************************************ 
+   VALUE MY VEHICLE PAGE CSS 
+*************************************/
+
+.banner-img {
+    position: relative;
+    background: url('/assets/img/value-my-car-banner.jpg') no-repeat center/cover;
+    overflow: hidden;
+}
+
+.banner-img::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #5B6770;
+    mix-blend-mode: darken;
+    opacity: 0.71;
+}
+
+.banner-content {
+    z-index: 2;
+}
+
+.section-title {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 20px;
+}
+
+.form-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-section .form-control,
+.form-section .form-select {
+    padding: 14px 15px;
+    font-size: 14px;
+    background-color: #F7F7F7;
+    color: #7C868D;
+    border: none;
+}
+
+.form-label{
+    font-size: 14px;
+    color: #5B6770;
+}
+
+.btn-submit {
+    background-color: #00c8c8;
+    width: 240px;
+    height: 46px;
+    color: #fff;
+    border: none;
+    padding: 8px 88px;
+    border-radius: 8px;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
