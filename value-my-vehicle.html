@@ -28,6 +28,10 @@
     <script src="partials/header.js" type="text/javascript" defer></script>
     <script src="partials/footer.js" type="text/javascript" defer></script>
 
+    <style>
+
+    </style>
+
 </head>
 
 <body>
@@ -46,127 +50,175 @@
         </div>
     </div>
 
-    <div class="container mt-5">
-        <!-- Personal Information -->
-        <div class="form-section">
-            <div class="section-title">Personal Information</div>
-            <div class="row mt-3">
-                <div class="col-md-6 mb-3">
-                    <label for="customerName" class="form-label">Customer Name*</label>
-                    <input type="text" class="form-control" id="customerName" placeholder="Enter Name">
-                </div>
-                <div class="col-md-6 mb-3">
-                    <label for="email" class="form-label">Email*</label>
-                    <input type="email" class="form-control" id="email" placeholder="Email">
-                </div>
-                <div class="col-md-6 mb-3">
-                    <label for="contactNumber" class="form-label">Contact Number*</label>
-                    <input type="text" class="form-control" id="contactNumber" placeholder="Enter Phone Number">
-                </div>
-                <div class="col-md-6 mb-3">
-                    <label for="city" class="form-label">City*</label>
-                    <input type="text" class="form-control" id="city" placeholder="Select City">
-                </div>
-                <div class="col-md-6 mb-3">
-                    <label for="state" class="form-label">State*</label>
-                    <input type="text" class="form-control" id="state" placeholder="Select State">
-                </div>
-                <div class="col-md-6 mb-3">
-                    <label for="pincode" class="form-label">Pincode</label>
-                    <input type="text" class="form-control" id="pincode" placeholder="Enter Pincode">
-                </div>
-            </div>
-        </div>
-
-        <!-- Vehicle Information -->
-        <div class="form-section">
-            <div class="section-title">Vehicle Information</div>
-            <div class="row mt-3">
-                <div class="col-md-6 mb-3">
-                    <label for="registrationNumber" class="form-label">Registration Number*</label>
-                    <input type="text" class="form-control" id="registrationNumber" value="MH03BX3361">
-                </div>
-                <div class="col-md-6 mb-3">
-                    <label for="make" class="form-label">Select Make*</label>
-                    <select class="form-select" id="make">
-                        <option>Select Make</option>
-                    </select>
-                </div>
-                <div class="col-md-6 mb-3">
-                    <label for="model" class="form-label">Select Model*</label>
-                    <select class="form-select" id="model">
-                        <option>Select Model</option>
-                    </select>
-                </div>
-                <div class="col-md-6 mb-3">
-                    <label for="variant" class="form-label">Select Variant*</label>
-                    <select class="form-select" id="variant">
-                        <option>Select Variant</option>
-                    </select>
-                </div>
-                <div class="col-md-6 mb-3">
-                    <label for="kilometers" class="form-label">Kilometers</label>
-                    <input type="text" class="form-control" id="kilometers" placeholder="Kilometers Run">
-                </div>
-                <div class="col-md-6 mb-3">
-                    <label for="mfgYear" class="form-label">Mfg Year</label>
-                    <input type="text" class="form-control" id="mfgYear" placeholder="Mfg Year">
-                </div>
-                <div class="col-md-6 mb-3">
-                    <label for="fuelType" class="form-label">Fuel Type</label>
-                    <select class="form-select" id="fuelType">
-                        <option>Select Fuel Type</option>
-                    </select>
-                </div>
-                <div class="col-md-6 mb-3">
-                    <label for="transmission" class="form-label">Transmission Type</label>
-                    <select class="form-select" id="transmission">
-                        <option>Select Transmission</option>
-                    </select>
-                </div>
-                <div class="col-md-6 mb-3">
-                    <label for="ownerType" class="form-label">Owner Type</label>
-                    <select class="form-select" id="ownerType">
-                        <option>Select Owner Type</option>
-                    </select>
+    <div class="value-my-vehicle-container">
+        <div class="container">
+            <div class="how-it-works text-center">
+                <h2>HOW IT WORKS</h2>
+                <div class="header-underline"></div>
+                <div class="row justify-content-center mt-4">
+                    <div class="col-12 col-md-4 d-flex flex-column align-items-center">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./assets/icons/estimate-svg.svg" alt="Estimate Icon" class="img-fluid">
+                            </div>
+                            <div class="card-content text-center">
+                                <h3>ESTIMATE</h3>
+                                <p>Get a valuation for your vehicle in a few minutes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 d-flex flex-column align-items-center">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./assets/icons/appointment-svg.svg" alt="Appointment Icon" class="img-fluid">
+                            </div>
+                            <div class="card-content text-center">
+                                <h3>APPOINTMENT</h3>
+                                <p>Get in contact with your closest retailer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 d-flex flex-column align-items-center">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./assets/icons/expertise-svg.svg" alt="Expertise Icon" class="img-fluid">
+                            </div>
+                            <div class="card-content text-center">
+                                <h3>EXPERTISE</h3>
+                                <p>Experts will inspect your vehicle to give you a definitive offer depending on the state
+                                    of your car.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!-- Buying Interest -->
-        <div class="form-section">
-            <div class="section-title">Buying Interest</div>
-            <div class="row mt-3">
-                <div class="col-md-6 mb-3">
-                    <label for="buyingMake" class="form-label">Select Make*</label>
-                    <select class="form-select" id="buyingMake">
-                        <option>Select Make</option>
-                    </select>
-                </div>
-                <div class="col-md-6 mb-3">
-                    <label for="buyingModel" class="form-label">Select Model*</label>
-                    <select class="form-select" id="buyingModel">
-                        <option>Select Model</option>
-                    </select>
-                </div>
-                <div class="col-md-6 mb-3">
-                    <label for="buyingVariant" class="form-label">Select Variant*</label>
-                    <select class="form-select" id="buyingVariant">
-                        <option>Select Variant</option>
-                    </select>
-                </div>
-                <div class="col-md-6 mb-3">
-                    <label for="buyingHorizon" class="form-label">Buying Horizon</label>
-                    <input type="text" class="form-control" id="buyingHorizon" placeholder="Buying Horizon">
+    
+    
+        <div class="container mt-5">
+            <!-- Personal Information -->
+            <div class="form-section">
+                <div class="section-title">Personal Information</div>
+                <div class="row mt-3">
+                    <div class="col-md-6 mb-3">
+                        <label for="customerName" class="form-label">Customer Name*</label>
+                        <input type="text" class="form-control" id="customerName" placeholder="Enter Name">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="email" class="form-label">Email*</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="contactNumber" class="form-label">Contact Number*</label>
+                        <input type="text" class="form-control" id="contactNumber" placeholder="Enter Phone Number">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="city" class="form-label">City*</label>
+                        <input type="text" class="form-control" id="city" placeholder="Select City">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="state" class="form-label">State*</label>
+                        <input type="text" class="form-control" id="state" placeholder="Select State">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="pincode" class="form-label">Pincode</label>
+                        <input type="text" class="form-control" id="pincode" placeholder="Enter Pincode">
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <!-- Submit Button -->
-        <div class="text-center">
-            <button type="button" class="btn-submit">Submit</button>
+    
+            <!-- Vehicle Information -->
+            <div class="form-section">
+                <div class="section-title">Vehicle Information</div>
+                <div class="row mt-3">
+                    <div class="col-md-6 mb-3">
+                        <label for="registrationNumber" class="form-label">Registration Number*</label>
+                        <input type="text" class="form-control" id="registrationNumber" value="MH03BX3361">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="make" class="form-label">Select Make*</label>
+                        <select class="form-select" id="make">
+                            <option>Select Make</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="model" class="form-label">Select Model*</label>
+                        <select class="form-select" id="model">
+                            <option>Select Model</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="variant" class="form-label">Select Variant*</label>
+                        <select class="form-select" id="variant">
+                            <option>Select Variant</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="kilometers" class="form-label">Kilometers</label>
+                        <input type="text" class="form-control" id="kilometers" placeholder="Kilometers Run">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="mfgYear" class="form-label">Mfg Year</label>
+                        <input type="text" class="form-control" id="mfgYear" placeholder="Mfg Year">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="fuelType" class="form-label">Fuel Type</label>
+                        <select class="form-select" id="fuelType">
+                            <option>Select Fuel Type</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="transmission" class="form-label">Transmission Type</label>
+                        <select class="form-select" id="transmission">
+                            <option>Select Transmission</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="ownerType" class="form-label">Owner Type</label>
+                        <select class="form-select" id="ownerType">
+                            <option>Select Owner Type</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Buying Interest -->
+            <div class="form-section">
+                <div class="section-title">Buying Interest</div>
+                <div class="row mt-3">
+                    <div class="col-md-6 mb-3">
+                        <label for="buyingMake" class="form-label">Select Make*</label>
+                        <select class="form-select" id="buyingMake">
+                            <option>Select Make</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="buyingModel" class="form-label">Select Model*</label>
+                        <select class="form-select" id="buyingModel">
+                            <option>Select Model</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="buyingVariant" class="form-label">Select Variant*</label>
+                        <select class="form-select" id="buyingVariant">
+                            <option>Select Variant</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="buyingHorizon" class="form-label">Buying Horizon</label>
+                        <input type="text" class="form-control" id="buyingHorizon" placeholder="Buying Horizon">
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Submit Button -->
+            <div class="text-center">
+                <button type="button" class="btn-submit">Submit</button>
+            </div>
         </div>
     </div>
+
+
 
     <!-- Include the Footer -->
     <div id="footer">
