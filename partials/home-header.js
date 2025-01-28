@@ -1,5 +1,9 @@
-class HomeHeader extends HTMLElement { constructor() { super(); }
-connectedCallback() { this.innerHTML = `   <nav class="home-navbar navbar-expand-lg">
+class HomeHeader extends HTMLElement {
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    this.innerHTML = `   <nav class="home-navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="/index.html">
             <img
@@ -27,7 +31,7 @@ connectedCallback() { this.innerHTML = `   <nav class="home-navbar navbar-expand
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Buy Used</a>
+                <a class="nav-link" href="buy-used.html">Buy Used</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -55,5 +59,7 @@ connectedCallback() { this.innerHTML = `   <nav class="home-navbar navbar-expand
             </ul>
           </div>
         </div>
-      </nav>`; } }
+      </nav>`;
+  }
+}
 customElements.define("home-header-component", HomeHeader);

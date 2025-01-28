@@ -1,9 +1,13 @@
-class Header extends HTMLElement { constructor() { super(); }
-connectedCallback() { this.innerHTML = `   <nav class="navbar navbar-expand-lg">
+class Header extends HTMLElement {
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    this.innerHTML = `   <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="/index.html">
             <img
-              src="/assets/img/spoticar-logo.png"
+              src="/assets/img/spoticar-logo-black.png"
               alt="Spoticar Logo"
               class="d-inline-block align-text-top"
             />
@@ -27,7 +31,7 @@ connectedCallback() { this.innerHTML = `   <nav class="navbar navbar-expand-lg">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Buy Used</a>
+                <a class="nav-link" href="buy-used.html">Buy Used</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -55,5 +59,7 @@ connectedCallback() { this.innerHTML = `   <nav class="navbar navbar-expand-lg">
             </ul>
           </div>
         </div>
-      </nav>`; } }
+      </nav>`;
+  }
+}
 customElements.define("header-component", Header);

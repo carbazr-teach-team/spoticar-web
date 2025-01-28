@@ -1,0 +1,13 @@
+<svg id="Group_4579" data-name="Group 4579" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="12" viewBox="0 0 12 12">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_4109" data-name="Rectangle 4109" width="6.59" height="3.727" fill="#7c868d"/>
+    </clipPath>
+  </defs>
+  <g id="Group_4487" data-name="Group 4487" transform="translate(2.354 3.804)">
+    <g id="Group_4486" data-name="Group 4486" transform="translate(0 0)" clip-path="url(#clip-path)">
+      <path id="Path_6791" data-name="Path 6791" d="M3.3,1.049c.041.039.077.071.111.106.8.8,1.6,1.6,2.405,2.4a.646.646,0,0,0,.308.165A.379.379,0,0,0,6.54,3.5a.427.427,0,0,0-.064-.487c-.027-.03-.056-.058-.084-.086L3.677.209c-.28-.28-.485-.279-.767,0Q1.543,1.578.178,2.947a.682.682,0,0,0-.163.268.4.4,0,0,0,.177.442.435.435,0,0,0,.491-.014A1.141,1.141,0,0,0,.8,3.535L3.185,1.153c.034-.034.07-.066.11-.1" transform="translate(0 0.001)" fill="#7c868d"/>
+    </g>
+  </g>
+  <rect id="Rectangle_3919" data-name="Rectangle 3919" width="12" height="12" transform="translate(12) rotate(90)" fill="none"/>
+</svg>
