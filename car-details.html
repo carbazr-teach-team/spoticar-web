@@ -29,6 +29,7 @@
       crossorigin="anonymous"
     />
 
+    <!-- slider CSS -->
     <link rel="stylesheet" href="/splide/dist/css/splide.min.css" />
 
     <!-- DYNAMIC COMPONENTS -->
@@ -50,7 +51,7 @@
         <ul class="breadcrumb">
           <li><a href="index.html">Home</a></li>
           <span class="dot"></span>
-          <li><a href="about-us.html">Buy Used</a></li>
+          <li><a href="buy-used.html">Buy Used</a></li>
           <span class="dot"></span>
           <li><a href="#">Car Details</a></li>
         </ul>
@@ -92,9 +93,9 @@
               </ul>
             </div>
           </div>
-          <div id="thumbnail-slider" class="splide">
+          <div id="thumbnail-slider" class="splide mt-2">
             <div class="splide__track">
-              <ul class="splide__list">
+              <ul class="splide__list thumbnail-preview-container">
                 <li class="splide__slide">
                   <img src="assets/img/home-banner-1.png" />
                 </li>
@@ -108,7 +109,7 @@
             </div>
           </div>
 
-          <div class="overview mt-5">
+          <div class="overview mt-3">
             <span class="title"> Car Overview</span>
 
             <div class="overview-spec">
@@ -359,7 +360,7 @@
     </div>
 
     <!-- External Script -->
-    <script src="js/app.js"></script>
+    <script src="js/car-details.js"></script>
 
     <!-- BOOTSTRAP JS -->
     <script
@@ -368,6 +369,7 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- slider JS -->
     <script src="/splide/dist/js/splide.min.js"></script>
   </body>
 </html>
