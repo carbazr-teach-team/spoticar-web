@@ -1,373 +1,427 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content="Spoticar" />
-    <title>Spoticar</title>
 
-    <!-- External Stylesheet -->
-    <link rel="stylesheet" href="css/style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="Spoticar" />
+  <title>Spoticar</title>
 
-    <!-- Favicon (optional) -->
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
 
-    <!-- Google Fonts (optional) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Favicon (optional) -->
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
 
-    <!-- BOOTSTRAP CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
+  <!-- Google Fonts (optional) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
 
-    <link rel="stylesheet" href="/splide/dist/css/splide.min.css" />
+  <!-- BOOTSTRAP CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 
-    <!-- DYNAMIC COMPONENTS -->
-    <script src="partials/header.js" type="text/javascript" defer></script>
-    <script src="partials/footer.js" type="text/javascript" defer></script>
+  <link rel="stylesheet" href="/splide/dist/css/splide.min.css" />
 
-    <style></style>
-  </head>
+  <!-- DYNAMIC COMPONENTS -->
+  <script src="partials/header.js" type="text/javascript" defer></script>
+  <script src="partials/footer.js" type="text/javascript" defer></script>
 
-  <body>
-    <div id="header">
-      <header-component></header-component>
+</head>
+
+<body>
+  <div id="header">
+    <header-component></header-component>
+  </div>
+
+  <div class="bottom-shadow"></div>
+
+  <div class="car-details">
+    <div class="page-breadcrumb">
+      <ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <span class="dot"></span>
+        <li><a href="about-us.html">Buy Used</a></li>
+        <span class="dot"></span>
+        <li><a href="#">Car Details</a></li>
+      </ul>
     </div>
 
-    <div class="bottom-shadow"></div>
-
-    <div class="car-details">
-      <div class="page-breadcrumb">
-        <ul class="breadcrumb">
-          <li><a href="index.html">Home</a></li>
-          <span class="dot"></span>
-          <li><a href="about-us.html">Buy Used</a></li>
-          <span class="dot"></span>
-          <li><a href="#">Car Details</a></li>
-        </ul>
+    <div class="car-title mt-3 mb-3">
+      <div class="title">
+        <span class="car-name"> 2018 Jeep Compass Longitude 2.0 </span>
+        <span class="car-specs">
+          58,381 km | Diesel | Manual | 1st Owner
+        </span>
       </div>
-
-      <div class="car-title mt-3 mb-3">
-        <div class="title">
-          <span class="car-name"> 2018 Jeep Compass Longitude 2.0 </span>
-          <span class="car-specs">
-            58,381 km | Diesel | Manual | 1st Owner
-          </span>
-        </div>
-        <div class="price">
-          <span class="car-price">Rs. 10.99 Lakh</span>
-          <span class="car-location">
-            <img
-              src="/assets/icons/car-detail-location.svg"
-              alt="location-icon"
-            />
-            Borivali (W), Mumbai</span
-          >
-        </div>
+      <div class="price">
+        <span class="car-price">Rs. 10.99 Lakh</span>
+        <span class="car-location">
+          <img src="/assets/icons/car-detail-location.svg" alt="location-icon" />
+          Borivali (W), Mumbai</span>
       </div>
+    </div>
 
-      <div class="details-container">
-        <div class="car-overview">
-          <div id="main-slider" class="splide">
-            <div class="splide__track">
-              <ul class="splide__list">
-                <li class="splide__slide">
-                  <img src="assets/img/home-banner-1.png" />
-                </li>
-                <li class="splide__slide">
-                  <img src="assets/img/buy-used-banner.jpg" />
-                </li>
-                <li class="splide__slide">
-                  <img src="assets/img/home-banner-2.png" />
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div id="thumbnail-slider" class="splide">
-            <div class="splide__track">
-              <ul class="splide__list">
-                <li class="splide__slide">
-                  <img src="assets/img/home-banner-1.png" />
-                </li>
-                <li class="splide__slide">
-                  <img src="assets/img/buy-used-banner.jpg" />
-                </li>
-                <li class="splide__slide">
-                  <img src="assets/img/home-banner-2.png" />
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="overview mt-5">
-            <span class="title"> Car Overview</span>
-
-            <div class="overview-spec">
-              <div class="spec-row">
-                <div class="spec">
-                  <span class="header">
-                    <img
-                      class="header-icon"
-                      src="/assets/icons/registration-year.svg"
-                      alt="header-icon"
-                    />
-                    Registration Year
-                  </span>
-                  <span class="data">Feb 2022</span>
-                </div>
-
-                <div class="spec">
-                  <span class="header">
-                    <img
-                      class="header-icon"
-                      src="/assets/icons/fuel-type.svg"
-                      alt="header-icon"
-                    />Fuel Type
-                  </span>
-                  <span class="data">Petrol</span>
-                </div>
-
-                <div class="spec">
-                  <span class="header">
-                    <img
-                      class="header-icon"
-                      src="/assets/icons/kms-driven.svg"
-                      alt="header-icon"
-                    />Kms Driven
-                  </span>
-                  <span class="data">18,000 Kms</span>
-                </div>
-
-                <div class="spec">
-                  <span class="header">
-                    <img
-                      class="header-icon"
-                      src="/assets/icons/ownership.svg"
-                      alt="header-icon"
-                    />Ownership
-                  </span>
-                  <span class="data">First Owner</span>
-                </div>
-
-                <div class="spec">
-                  <span class="header">
-                    <img
-                      class="header-icon"
-                      src="/assets/icons/car-detail-transmission.svg"
-                      alt="header-icon"
-                    />Transmission
-                  </span>
-                  <span class="data">Automatic</span>
-                </div>
-              </div>
-
-              <div class="spec-row">
-                <div class="spec">
-                  <span class="header">
-                    <img
-                      class="header-icon"
-                      src="/assets/icons/insurance.svg"
-                      alt="header-icon"
-                    />Insurance
-                  </span>
-                  <span class="data">Comprehensive</span>
-                </div>
-
-                <div class="spec">
-                  <span class="header">
-                    <img
-                      class="header-icon"
-                      src="/assets/icons/seats.svg"
-                      alt="header-icon"
-                    />Seats
-                  </span>
-                  <span class="data">5 Seats</span>
-                </div>
-
-                <div class="spec">
-                  <span class="header">
-                    <img
-                      class="header-icon"
-                      src="/assets/icons/rto.svg"
-                      alt="header-icon"
-                    />RTO
-                  </span>
-                  <span class="data">Pune</span>
-                </div>
-
-                <div class="spec">
-                  <span class="header">
-                    <img
-                      class="header-icon"
-                      src="/assets/icons/engine-displacement.svg"
-                      alt="header-icon"
-                    />Engine Displacement
-                  </span>
-                  <span class="data">1368 cc</span>
-                </div>
-
-                <div class="spec">
-                  <span class="header">
-                    <img
-                      class="header-icon"
-                      src="/assets/icons/year-of-manufacture.svg"
-                      alt="header-icon"
-                    />Year of Manufacture
-                  </span>
-                  <span class="data">2022</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="vehicle-estimate mt-4">
-            <p class="title mt-2">Part exchange estimate for your car</p>
-
-            <div class="info-grids">
-              <div class="info">
-                <div class="info-icon">
-                  <img src="/assets/icons/quick.svg" alt="info-icon" />
-                </div>
-                <div class="info-title">QUICK</div>
-                <div class="info-text">
-                  <p>An estimate in a few clicks</p>
-                </div>
-              </div>
-              <div class="info">
-                <div class="info-icon">
-                  <img src="/assets/icons/free.svg" alt="info-icon" />
-                </div>
-                <div class="info-title">FREE</div>
-                <div class="info-text">
-                  <p>A free no obligation part exchange valuation</p>
-                </div>
-              </div>
-              <div class="info">
-                <div class="info-icon">
-                  <img src="/assets/icons/trustworthy.svg" alt="info-icon" />
-                </div>
-                <div class="info-title">TRUSTWORTHY</div>
-                <div class="info-text">
-                  <p>Completed by your retailer</p>
-                </div>
-              </div>
-              <div class="info">
-                <div class="info-icon">
-                  <img src="/assets/icons/convenient.svg" alt="info-icon" />
-                </div>
-                <div class="info-title">CONVENIENT</div>
-                <div class="info-text">
-                  <p>Over 500 retailers nationwide</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="paragraph">
-              <p>
-                Get a quick estimate of your car's value with just a few clicks,
-                either by entering its registration number or its
-                specifications. Afterwards, you can get in touch with one of our
-                sales outlets, which will commit to providing you with a firm
-                trade-in offer following a physical inspection of your vehicle,
-                regardless of its condition.
-              </p>
-              <p>
-                If you're satisfied with the trade-in offer, the SPOTICAR sales
-                outlet will buy your car, handle all administrative procedures,
-                and you'll also benefit from secure payment.
-              </p>
-
-              <button class="value-vehicle-btn">Value My Vehicle</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="car-extra-details">
-          <div class="test-drive">
-            <p>Test Drive Available - Yes</p>
-            <p>Warranty : 6 Months /10000KMS</p>
-
-            <button class="interested-btn">I'm Interested</button>
-          </div>
-
-          <div class="retailer mt-4">
-            <div class="title">Retailer</div>
-            <div class="map"></div>
-            <div class="sub-title">SPOTICAR FRF Motors Swansea</div>
-            <div class="address">Neath Road SA6 8JR Swansea</div>
-            <div class="phone"><span>Phone :</span> 01792310111</div>
-          </div>
-
-          <div class="warranty mt-4">
-            <div class="title">Warranty</div>
-            <div class="sub-title mt-2">
-              MINIMUM 6 MONTHS' SPOTICAR WARRANTY
-            </div>
-            <ul>
-              <li>
-                <img src="/assets/icons/car-detail-tick.svg" alt="tick-icon" />
-                6 MONTH ROADSIDE ASSISTANCE
+    <div class="details-container">
+      <div class="car-overview">
+        <div id="main-slider" class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="assets/img/home-banner-1.png" />
               </li>
-              <li>
-                <img
-                  src="/assets/icons/car-detail-tick.svg"
-                  alt="tick-icon"
-                />PART EXCHANGE OF YOUR PREVIOUS VEHICLE
+              <li class="splide__slide">
+                <img src="assets/img/buy-used-banner.jpg" />
               </li>
-              <li>
-                <img
-                  src="/assets/icons/car-detail-tick.svg"
-                  alt="tick-icon"
-                />MULTI-POINT CHECK
-              </li>
-              <li>
-                <img
-                  src="/assets/icons/car-detail-tick.svg"
-                  alt="tick-icon"
-                />HISTORY OF OWNERSHIP CHECK
-              </li>
-              <li>
-                <img
-                  src="/assets/icons/car-detail-tick.svg"
-                  alt="tick-icon"
-                />EXTENDED WARRANTY AVAILABLE
-              </li>
-              <li>
-                <img
-                  src="/assets/icons/car-detail-tick.svg"
-                  alt="tick-icon"
-                />30 DAY FAULT BASED EXCHANGE
+              <li class="splide__slide">
+                <img src="assets/img/home-banner-2.png" />
               </li>
             </ul>
           </div>
         </div>
+        <div id="thumbnail-slider" class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="assets/img/home-banner-1.png" />
+              </li>
+              <li class="splide__slide">
+                <img src="assets/img/buy-used-banner.jpg" />
+              </li>
+              <li class="splide__slide">
+                <img src="assets/img/home-banner-2.png" />
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="overview mt-5">
+          <span class="title"> Car Overview</span>
+
+          <div class="overview-spec">
+            <div class="spec-row">
+              <div class="spec">
+                <span class="header">
+                  <img class="header-icon" src="/assets/icons/registration-year.svg" alt="header-icon" />
+                  Registration Year
+                </span>
+                <span class="data">Feb 2022</span>
+              </div>
+
+              <div class="spec">
+                <span class="header">
+                  <img class="header-icon" src="/assets/icons/fuel-type.svg" alt="header-icon" />Fuel Type
+                </span>
+                <span class="data">Petrol</span>
+              </div>
+
+              <div class="spec">
+                <span class="header">
+                  <img class="header-icon" src="/assets/icons/kms-driven.svg" alt="header-icon" />Kms Driven
+                </span>
+                <span class="data">18,000 Kms</span>
+              </div>
+
+              <div class="spec">
+                <span class="header">
+                  <img class="header-icon" src="/assets/icons/ownership.svg" alt="header-icon" />Ownership
+                </span>
+                <span class="data">First Owner</span>
+              </div>
+
+              <div class="spec">
+                <span class="header">
+                  <img class="header-icon" src="/assets/icons/car-detail-transmission.svg"
+                    alt="header-icon" />Transmission
+                </span>
+                <span class="data">Automatic</span>
+              </div>
+            </div>
+
+            <div class="spec-row">
+              <div class="spec">
+                <span class="header">
+                  <img class="header-icon" src="/assets/icons/insurance.svg" alt="header-icon" />Insurance
+                </span>
+                <span class="data">Comprehensive</span>
+              </div>
+
+              <div class="spec">
+                <span class="header">
+                  <img class="header-icon" src="/assets/icons/seats.svg" alt="header-icon" />Seats
+                </span>
+                <span class="data">5 Seats</span>
+              </div>
+
+              <div class="spec">
+                <span class="header">
+                  <img class="header-icon" src="/assets/icons/rto.svg" alt="header-icon" />RTO
+                </span>
+                <span class="data">Pune</span>
+              </div>
+
+              <div class="spec">
+                <span class="header">
+                  <img class="header-icon" src="/assets/icons/engine-displacement.svg" alt="header-icon" />Engine
+                  Displacement
+                </span>
+                <span class="data">1368 cc</span>
+              </div>
+
+              <div class="spec">
+                <span class="header">
+                  <img class="header-icon" src="/assets/icons/year-of-manufacture.svg" alt="header-icon" />Year of
+                  Manufacture
+                </span>
+                <span class="data">2022</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="vehicle-estimate mt-4">
+          <p class="title mt-2">Part exchange estimate for your car</p>
+
+          <div class="info-grids">
+            <div class="info">
+              <div class="info-icon">
+                <img src="/assets/icons/quick.svg" alt="info-icon" />
+              </div>
+              <div class="info-title">QUICK</div>
+              <div class="info-text">
+                <p>An estimate in a few clicks</p>
+              </div>
+            </div>
+            <div class="info">
+              <div class="info-icon">
+                <img src="/assets/icons/free.svg" alt="info-icon" />
+              </div>
+              <div class="info-title">FREE</div>
+              <div class="info-text">
+                <p>A free no obligation part exchange valuation</p>
+              </div>
+            </div>
+            <div class="info">
+              <div class="info-icon">
+                <img src="/assets/icons/trustworthy.svg" alt="info-icon" />
+              </div>
+              <div class="info-title">TRUSTWORTHY</div>
+              <div class="info-text">
+                <p>Completed by your retailer</p>
+              </div>
+            </div>
+            <div class="info">
+              <div class="info-icon">
+                <img src="/assets/icons/convenient.svg" alt="info-icon" />
+              </div>
+              <div class="info-title">CONVENIENT</div>
+              <div class="info-text">
+                <p>Over 500 retailers nationwide</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="paragraph">
+            <p>
+              Get a quick estimate of your car's value with just a few clicks,
+              either by entering its registration number or its
+              specifications. Afterwards, you can get in touch with one of our
+              sales outlets, which will commit to providing you with a firm
+              trade-in offer following a physical inspection of your vehicle,
+              regardless of its condition.
+            </p>
+            <p>
+              If you're satisfied with the trade-in offer, the SPOTICAR sales
+              outlet will buy your car, handle all administrative procedures,
+              and you'll also benefit from secure payment.
+            </p>
+
+            <button class="value-vehicle-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Value My
+              Vehicle</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="car-extra-details">
+        <div class="test-drive">
+          <p>Test Drive Available - Yes</p>
+          <p>Warranty : 6 Months /10000KMS</p>
+
+          <button class="interested-btn" data-bs-toggle="modal" data-bs-target="#IAmInterestedModal">I'm
+            Interested</button>
+
+        </div>
+
+        <div class="retailer mt-4">
+          <div class="title">Retailer</div>
+          <div class="map"></div>
+          <div class="sub-title">SPOTICAR FRF Motors Swansea</div>
+          <div class="address">Neath Road SA6 8JR Swansea</div>
+          <div class="phone"><span>Phone :</span> 01792310111</div>
+        </div>
+
+        <div class="warranty mt-4">
+          <div class="title">Warranty</div>
+          <div class="sub-title mt-2">
+            MINIMUM 6 MONTHS' SPOTICAR WARRANTY
+          </div>
+          <ul>
+            <li>
+              <img src="/assets/icons/car-detail-tick.svg" alt="tick-icon" />
+              6 MONTH ROADSIDE ASSISTANCE
+            </li>
+            <li>
+              <img src="/assets/icons/car-detail-tick.svg" alt="tick-icon" />PART EXCHANGE OF YOUR PREVIOUS VEHICLE
+            </li>
+            <li>
+              <img src="/assets/icons/car-detail-tick.svg" alt="tick-icon" />MULTI-POINT CHECK
+            </li>
+            <li>
+              <img src="/assets/icons/car-detail-tick.svg" alt="tick-icon" />HISTORY OF OWNERSHIP CHECK
+            </li>
+            <li>
+              <img src="/assets/icons/car-detail-tick.svg" alt="tick-icon" />EXTENDED WARRANTY AVAILABLE
+            </li>
+            <li>
+              <img src="/assets/icons/car-detail-tick.svg" alt="tick-icon" />30 DAY FAULT BASED EXCHANGE
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
+  </div>
 
-    <!-- Include the Footer -->
-    <div id="footer">
-      <footer-component></footer-component>
+  <!-- I am interested modal -->
+  <div class="modal fade user-details" id="IAmInterestedModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-wrapper">
+          <div class="modal-header d-flex align-items-start">
+            <div class="d-flex flex-column">
+              <h5 class="modal-title fs-5" id="exampleModalLabel">Enter your details</h5>
+              <p class="modal-sub-title">We will get back to you soon</p>
+            </div>
+            <button type="button" class="small-close" data-bs-dismiss="modal" aria-label="Close">
+              <img src="/assets/icons/close-icon.svg" alt="close-icon">
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="" class="d-flex flex-column">
+              <input type="text" class="form-control mb-3" name="name" id="name" placeholder="Name">
+              <input type="text" class="form-control mb-3" name="mobile-number" id="mobile-number"
+                placeholder="Mobile Number">
+              <textarea class="form-control mb-3" rows="5" placeholder="Message"></textarea>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkbox1">
+                <label class="form-check-label" for="checkbox1">
+                  I'd like to explore exchange options for my current vehicle.
+                </label>
+              </div>
+              <div class="form-check mb-3 consent-checkbox">
+                <input class="form-check-input" type="checkbox" id="checkbox2">
+                <label class="form-check-label" for="checkbox2">
+                  I hereby give my consent to Spoticar for using my personal data/information for the purposes
+                  mentioned in the declaration of consent. I have read and understood the content of the
+                  declaration of <span class="text-underline">consent</span>.
+                </label>
+              </div>
+            </form>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary w-100">Submit</button>
+          </div>
+        </div>
+
+      </div>
     </div>
+  </div>
 
-    <!-- External Script -->
-    <script src="js/app.js"></script>
+  <!-- value my vehicle modal -->
+  <div class="modal fade value-my-vehicle-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title fs-5" id="exampleModalLabel">MH03BX3361</h4>
+          <button type="button" class="small-close" data-bs-dismiss="modal" aria-label="Close">
+            <img src="/assets/icons/close-icon.svg" alt="close-icon">
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Mercedes Benz GLC 200 2022 Automatic Transmission (AT) Petrol</p>
 
-    <!-- BOOTSTRAP JS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+          <div class="kms-owners">
 
-    <script src="/splide/dist/js/splide.min.js"></script>
-  </body>
+            <div class="d-flex justify-content-between">
+              <span>Kms</span><span class="bold">20532</span>
+            </div>
+            <div class="d-flex justify-content-between">
+              <span>No of Owners</span><span class="bold">1</span>
+            </div>
+          </div>
+
+          <div class="risk-assesment">
+            <p class="bold">Risk Assessment Details</p>
+            <div class="d-flex justify-content-between">
+              <span>Challan</span><span class="bold">&#8377; 0</span>
+            </div>
+            <div class="d-flex justify-content-between">
+              <span>RC Blacklist</span><span class="bold">NA</span>
+            </div>
+          </div>
+
+          <div class="pricing-matrix">
+            <p class="bold">Pricing Matrix</p>
+            <div class="d-flex justify-content-between">
+              <span>Ex-Showroom Price</span><span class="bold">&#8377; 55,84,015</span>
+            </div>
+            <div class="d-flex justify-content-between">
+              <span>On-Road Price</span><span class="bold">&#8377; 62,84,015</span>
+            </div>
+          </div>
+
+          <div class="svg-bg">
+            <div class="price-matrix-content d-flex flex-column justify-content-center">
+              <h6>RV Matrix</h6>
+              <p>
+                According to our RV Matrix and your Car’s details. Your Car’s value falls within the below price range
+              </p>
+              <hr>
+              <h5>₹ 35,00,000 - ₹ 38,75,000</h5>
+            </div>
+          </div>
+
+          <div class="note">
+            <p>Note : Please note that the provided RV Matrix is for reference only. The final price will be determined
+              after a detailed evaluation of the vehicle.</p>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary w-100">Request Detailed Evaluation</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Include the Footer -->
+  <div id="footer">
+    <footer-component></footer-component>
+  </div>
+
+  <!-- External Script -->
+  <script src="js/app.js"></script>
+
+  <!-- BOOTSTRAP JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <script src="/splide/dist/js/splide.min.js"></script>
+</body>
+
 </html>
