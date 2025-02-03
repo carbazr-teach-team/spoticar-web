@@ -80,6 +80,9 @@ body {
 .footer-content {
   max-width: 1400px;
   padding: 70px 130px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .footer-left {
@@ -89,7 +92,7 @@ body {
 
 .footer-top {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .footer .text {
@@ -100,14 +103,15 @@ body {
   margin-top: 22px;
 }
 
-.footer-top .footer-nav ul {
+.footer-content .footer-nav ul {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   color: #7c868d;
   font-size: 11px;
 }
 
-.footer-top .footer-nav ul li {
+.footer-content .footer-nav ul li {
   margin-right: 20px;
 }
 
@@ -179,6 +183,7 @@ body {
 
     .info-grids {
       display: flex;
+      flex-wrap: wrap;
       gap: 12px;
       width: 100%;
       justify-content: center;
@@ -209,7 +214,7 @@ body {
       text-align: center;
       height: 55%;
       color: #fafafa;
-      font-size: 18px;
+      font-size: 1rem;
     }
 
     .sub-title-second {
@@ -293,6 +298,7 @@ body {
 
       .slider {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         width: 100%;
 
@@ -998,7 +1004,7 @@ body {
 *************************************/
 
 .car-details {
-  max-width: 1110px;
+  max-width: 1200px;
   margin: 28px auto;
 
   .page-breadcrumb {
@@ -1022,6 +1028,7 @@ body {
 
   .car-title {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 
     .title {
@@ -1055,7 +1062,9 @@ body {
 
   .details-container {
     display: flex;
-    gap: 45px;
+    flex-wrap: wrap;
+    gap: 26px;
+    justify-content: space-between;
 
     .car-overview {
       width: 60%;
@@ -1063,6 +1072,29 @@ body {
       .splide__slide img {
         width: 100%;
         height: auto;
+      }
+
+      .splide__arrow {
+        background: none !important;
+        width: 1em !important;
+      }
+
+      .splide__arrow--prev {
+        left: 0em !important;
+        width: 20px !important;
+      }
+
+      .splide__arrow--next {
+        right: 0em !important;
+        width: 20px !important;
+      }
+
+      .thumbnail-preview-container {
+        padding: 0px 28px !important;
+
+        .splide__slide.is-active {
+          border: 3px solid #13d0ca;
+        }
       }
 
       .overview {
@@ -1131,11 +1163,12 @@ body {
           width: 100%;
           justify-content: center;
           padding: 6px;
+          flex-wrap: wrap;
         }
 
         .info {
           padding: 0px 6px;
-          width: 180px;
+          width: 150px;
           height: 145px;
           display: flex;
           flex-direction: column;
@@ -1176,12 +1209,13 @@ body {
           color: #fff;
           border: none;
           padding: 9px;
-          width: 235px;
+          width: 250px;
           border-radius: 8px;
           display: flex;
           justify-content: center;
           justify-self: center;
           margin: 26px 0px;
+          font-size: 15px;
         }
       }
     }
@@ -1263,6 +1297,101 @@ body {
           }
         }
       }
+    }
+  }
+}
+
+/****************************** 
+  MEDIA QUERIES FOR 425px 
+*******************************/
+
+@media only screen and (max-width: 425px) {
+  .footer-content {
+    padding: 25px 35px;
+    justify-content: center;
+
+    .logo {
+      text-align: center;
+    }
+
+    .footer-nav ul {
+      padding-left: 14px;
+    }
+
+    .footer-nav ul :nth-child(5) {
+      margin-top: 6px Im !important;
+    }
+
+    .footer-nav {
+      margin-top: 20px;
+    }
+  }
+
+  .home {
+    .search-bar-container {
+      display: none;
+    }
+
+    .info-container {
+      padding: 20px 0px;
+
+      .info-grids {
+        padding: 25px;
+      }
+
+      .info {
+        width: 180px;
+      }
+    }
+
+    .banner-2 {
+      .banner-text {
+        padding: 0px 20px;
+        margin-left: 30px;
+
+        .title {
+          font-size: 40px;
+        }
+      }
+    }
+
+    .car-slider {
+      padding: 26px;
+
+      .title {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .title::after {
+        width: 100%;
+      }
+
+      .slider {
+        gap: 24px;
+      }
+    }
+  }
+
+  .about-container {
+    .text-content {
+      padding: 0px 35px;
+    }
+  }
+
+  .car-details {
+    .car-overview,
+    .car-extra-details {
+      width: 90% !important;
+      margin: auto;
+    }
+
+    .overview-spec {
+      flex-wrap: wrap;
+    }
+
+    .info {
+      width: 140px !important;
     }
   }
 }

@@ -6,13 +6,13 @@ document.addEventListener("DOMContentLoaded", () => {
     pagination: false,
     arrows: false,
     cover: true,
-    heightRatio: 0.5,
+    heightRatio: 0.7,
   });
 
   var thumbnails = new Splide("#thumbnail-slider", {
     fixedWidth: 100,
-    fixedHeight: 60,
-    gap: 10,
+    fixedHeight: 90,
+    gap: 12,
     rewind: true,
     pagination: false,
     cover: true,
