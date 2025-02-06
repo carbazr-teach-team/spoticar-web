@@ -562,7 +562,7 @@ body {
    VALUE MY VEHICLE PAGE CSS 
 *************************************/
 
-/* .banner-img {
+.banner-img {
   position: relative;
   background: url("/assets/img/value-my-car-banner.jpg") no-repeat center/cover;
   overflow: hidden;
@@ -581,6 +581,8 @@ body {
 .banner-content {
   z-index: 2;
 }
+
+/* 
 
 .value-my-vehicle-container {
   max-width: 1400px;
@@ -829,7 +831,7 @@ body {
 }
 
 .matrix-body .svg-bg {
-  background: url("assets/img/price_matrix_bg_design.png");
+  background: url("/assets/img/price_matrix_bg_design.png");
   background-position: center;
   color: #ffffff;
   background-repeat: no-repeat;
