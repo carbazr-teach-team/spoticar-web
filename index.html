@@ -29,8 +29,11 @@
       crossorigin="anonymous"
     />
 
+    <!-- slider CSS -->
+    <link rel="stylesheet" href="/splide/dist/css/splide.min.css" />
+
     <!-- DYNAMIC COMPONENTS -->
-    <script src="partials/header.js" type="text/javascript" defer></script>
+    <script src="partials/home-header.js" type="text/javascript" defer></script>
     <script src="partials/footer.js" type="text/javascript" defer></script>
   </head>
 
@@ -41,13 +44,88 @@
     <main class="home">
       <section class="banner-1">
         <div class="home-header">
-          <header-component></header-component>
+          <home-header-component></home-header-component>
         </div>
-        <img
-          src="/assets/img/home-banner-1.png"
-          alt="home-banner"
-          class="banner-1-img"
-        />
+
+        <div
+          id="home-carousel-one"
+          class="splide"
+          aria-label="Beautiful Images"
+        >
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img
+                  class="main-banner-text"
+                  src="/assets/img/home-main-slider-text-1.png"
+                  alt="home-slider-text"
+                />
+
+                <img
+                  class="main-banner-img"
+                  srcset="
+                    /assets/img/home-main-slider-1.png 1024w,
+                    /assets/img/mob-home-banner-1.png   640w,
+                    /assets/img/mob-home-banner-1.png   420w
+                  "
+                  src="/assets/img/home-main-slider-1.png"
+                  alt="home-slider"
+                />
+              </li>
+              <li class="splide__slide">
+                <img
+                  class="main-banner-text-left"
+                  src="/assets/img/home-main-slider-text-2.png"
+                  alt="home-slider-text"
+                />
+                <img
+                  class="main-banner-img"
+                  srcset="
+                    /assets/img/home-main-slider-2.jpg 1024w,
+                    /assets/img/mob-home-banner-2.png   640w,
+                    /assets/img/mob-home-banner-2.png   420w
+                  "
+                  src="/assets/img/home-main-slider-2.jpg"
+                  alt="home-slider"
+                />
+              </li>
+              <li class="splide__slide">
+                <img
+                  class="main-banner-text-left"
+                  src="/assets/img/home-main-slider-text-3.png"
+                  alt="home-slider-text"
+                />
+                <img
+                  class="main-banner-img"
+                  srcset="
+                    /assets/img/home-main-slider-3.jpg 1024w,
+                    /assets/img/mob-home-banner-3.png   640w,
+                    /assets/img/mob-home-banner-3.png   420w
+                  "
+                  src="/assets/img/home-main-slider-3.jpg"
+                  alt="home-slider"
+                />
+              </li>
+              <li class="splide__slide">
+                <img
+                  class="main-banner-text-left"
+                  src="/assets/img/home-main-slider-text-4.png"
+                  alt="home-slider-text"
+                />
+                <img
+                  class="main-banner-img"
+                  srcset="
+                    /assets/img/home-main-slider-4.jpg 1024w,
+                    /assets/img/mob-home-banner-4.png   640w,
+                    /assets/img/mob-home-banner-4.png   420w
+                  "
+                  src="/assets/img/home-main-slider-4.jpg"
+                  alt="home-slider"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <section class="info-container">
@@ -129,14 +207,38 @@
       </section>
 
       <section class="banner-2">
-        <div class="banner-text">
-          <span class="title">
-            <span class="primary-text">CERTIFIED</span>
-            <span>VEHICLES FROM</span>
-          </span>
-          <div>
-            <img src="/assets/img/citroen-logo-white.png" alt="citroen" />
-            <img src="/assets/img/jeep-logo-white.png" alt="Jeep" />
+        <div
+          id="home-carousel-two"
+          class="splide"
+          aria-label="Beautiful Images"
+        >
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img
+                  class="second-banner-img"
+                  srcset="
+                    /assets/img/Citroen-mob-banner01.jpg  450w,
+                    /assets/img/Citroen-mob-banner01.jpg  640w,
+                    /assets/img/Citroen-banner01.jpg     1024w
+                  "
+                  src="/assets/img/Citroen-banner01.jpg"
+                  alt="home-slider"
+                />
+              </li>
+              <li class="splide__slide">
+                <img
+                  class="second-banner-img"
+                  srcset="
+                    /assets/img/Citroen-mob-banner02.jpg  450w,
+                    /assets/img/Citroen-mob-banner02.jpg  640w,
+                    /assets/img/Citroen-banner02.jpg     1024w
+                  "
+                  src="/assets/img/Citroen-banner02.jpg"
+                  alt="home-slider"
+                />
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -368,7 +470,7 @@
     </div>
 
     <!-- External Script -->
-    <script src="js/app.js"></script>
+    <script src="js/home.js"></script>
 
     <!-- BOOTSTRAP JS -->
     <script
@@ -376,5 +478,8 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <!-- SPLIDE JS -->
+    <script src="/splide/dist/js/splide.min.js"></script>
   </body>
 </html>
